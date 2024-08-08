@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/midlajioss/upload-file.git/static/css/main.e6c13ad2.css",
+    "main.js": "/midlajioss/upload-file.git/static/js/main.0fdb1a79.js",
+    "static/js/453.d616059b.chunk.js": "/midlajioss/upload-file.git/static/js/453.d616059b.chunk.js",
+    "index.html": "/midlajioss/upload-file.git/index.html",
+    "main.e6c13ad2.css.map": "/midlajioss/upload-file.git/static/css/main.e6c13ad2.css.map",
+    "main.0fdb1a79.js.map": "/midlajioss/upload-file.git/static/js/main.0fdb1a79.js.map",
+    "453.d616059b.chunk.js.map": "/midlajioss/upload-file.git/static/js/453.d616059b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.0fdb1a79.js"
+  ]
+}
