@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import { db } from './firebase';
+import { collection, addDoc } from 'firebase/firestore';
+import UploadImage from './UploadImage';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const [name, setName] = useState('');
+const [age, setAge] = useState('');
+
+const handleAdd = async () => {
+  try {
+    await addDoc(collection(db, 'members'), {
+      name: name,
+      age: age
+    });
+    setName('');
+    setAge('');
+    alert('Document added successfully!');
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+};
+
+return (
+  <div>
+    <UploadImage/>
+  </div>
+);
 }
 
 export default App;
